@@ -1,0 +1,37 @@
+# 操作系统相关
+.DS_Store                # Mac系统隐藏文件
+Thumbs.db                # Windows系统缩略图缓存
+*.tmp                    # 临时文件
+*.swp                    # Vim编辑器缓存
+*.swo
+*~                       # 临时文件（Linux/Mac）
+.idea/                   # IDEA/WebStorm配置目录
+.vscode/                 # VSCode配置目录（可选，若团队统一配置可取消）
+*.suo                    # Visual Studio缓存
+*.user                   # Visual Studio用户配置
+*.userosscache
+*.sln.docstates
+
+# 日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pytest.log               # Python测试日志
+access.log               # 后端服务日志
+
+# 缓存/临时目录
+.cache/
+.tmp/
+temp/
+
+# 敏感配置（必加！）
+.env                     # 环境变量文件（含密钥/数据库密码）
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+*.pem                    # SSH密钥
+*.key                    # 各类密钥文件
+config/local_config.py   # 本地自定义配置
